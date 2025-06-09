@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Acerca de</title>
-    <th:block th:include="layout :: head('Acerca de')"/>
-</head>
+
+<head th:replace="fragments :: head (titulo='Acerca de')"></head>
+
 <body>
-<div th:replace="layout :: content">
-    <div th:fragment="content">
-        <h1>Acerca de</h1>
-        <p>Esta aplicación permite gestionar tareas pendientes.</p>
+<div class="container-fluid">
+    <div class="container-fluid">
+        <h1>ToDoList</h1>
+        <ul>
+            <li>Desarrollada por TU NOMBRE </li>
+            <li>Versión 1.0.1 (en desarrollo)</li>
+            <li>Fecha de release: pendiente de release</li>
+        </ul>
     </div>
 </div>
+<div th:replace="fragments::javascript"/>
 </body>
 </html>
