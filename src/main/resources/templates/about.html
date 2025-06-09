@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Acerca de</title>
+    <th:block th:include="layout :: head('Acerca de')"/>
+</head>
+<body>
+<div th:replace="layout :: content">
+    <div th:fragment="content">
+        <h1>Acerca de</h1>
+        <p>Esta aplicación permite gestionar tareas pendientes.</p>
+    </div>
+</div>
+</body>
+</html>
