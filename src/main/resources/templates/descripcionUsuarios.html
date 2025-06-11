@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head (titulo='Descripción de usuario')"></head>
+<body>
+<div th:replace="fragments :: menu(${usuario})"></div>
+<div class="container">
+    <h2>Descripción de usuario</h2>
+    <ul>
+        <li><strong>ID:</strong> <span th:text="${usuario.id}"></span></li>
+        <li><strong>Correo electrónico:</strong> <span th:text="${usuario.email}"></span></li>
+        <li><strong>Nombre:</strong> <span th:text="${usuario.nombre}"></span></li>
+        <!-- Agrega aquí otros campos que tenga tu entidad Usuario, excepto la contraseña -->
+    </ul>
+</div>
+<div th:replace="fragments::javascript"/>
+</body>
+</html>
