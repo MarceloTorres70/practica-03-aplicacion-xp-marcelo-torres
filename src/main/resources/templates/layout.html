@@ -11,6 +11,8 @@
 <!-- Aquí insertamos el header/menu -->
 <div th:insert="~{fragments :: menu}"></div>
 
+<div th:replace="fragments :: menu(${usuario})"></div>
+
 <!-- Contenido principal de cada página -->
 <div class="container mt-4" th:fragment="content">
     <!-- Aquí va el contenido específico de cada vista -->
