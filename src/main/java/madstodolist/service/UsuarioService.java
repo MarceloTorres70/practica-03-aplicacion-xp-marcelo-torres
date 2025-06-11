@@ -14,9 +14,6 @@ import madstodolist.dto.UsuarioData;
 import madstodolist.model.Usuario;
 import madstodolist.repository.UsuarioRepository;
 
-
-
-@Service
 public class UsuarioService {
 
     Logger logger = LoggerFactory.getLogger(UsuarioService.class);
@@ -76,6 +73,7 @@ public class UsuarioService {
             return modelMapper.map(usuario, UsuarioData.class);
         }
     }
+
 
     public List<Usuario> findAll() {
         List<Usuario> usuarios = new java.util.ArrayList<>();
