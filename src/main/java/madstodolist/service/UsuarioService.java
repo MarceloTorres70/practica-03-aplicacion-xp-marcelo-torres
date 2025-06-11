@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import madstodolist.dto.UsuarioData;
 import madstodolist.model.Usuario;
 import madstodolist.repository.UsuarioRepository;
-@Service
+
 public class UsuarioService {
 
     Logger logger = LoggerFactory.getLogger(UsuarioService.class);
@@ -74,9 +74,7 @@ public class UsuarioService {
         }
     }
 
-    public Usuario findUsuarioEntityById(Long id) {
-        return usuarioRepository.findById(id).orElse(null);
-    }
+
     public List<Usuario> findAll() {
         List<Usuario> usuarios = new java.util.ArrayList<>();
         usuarioRepository.findAll().forEach(usuarios::add);
