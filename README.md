@@ -5,6 +5,10 @@
 Esta documentación describe la evolución y los cambios realizados en la aplicación **ToDoList** durante la implementación de los módulos de **barra de menú**, **listado de usuarios** y **descripción de usuario**.  
 El objetivo es que cualquier desarrollador del equipo pueda entender las nuevas funcionalidades, su estructura y los puntos clave del código fuente.
 
+### Nota sobre el tiempo de desarrollo
+
+Aunque el desarrollo de la práctica se concentró principalmente en los últimos días del plazo, esto no refleja la totalidad del tiempo y esfuerzo invertido. Durante las primeras semanas, el mayor enfoque estuvo en comprender a fondo el proyecto, analizar el código base existente, identificar los requerimientos funcionales y adaptarse a la nueva metodología de trabajo enseñada en la asignatura. Este proceso de análisis y preparación fue fundamental, aunque no queda reflejado directamente en los commits del repositorio. Si bien los registros de GitHub muestran actividad reciente, el trabajo se distribuyó de manera periódica a lo largo de las tres semanas asignadas para asegurar un desarrollo correcto y bien estructurado de la práctica.
+
 ---
 
 ## Nuevas Clases y Métodos Implementados
