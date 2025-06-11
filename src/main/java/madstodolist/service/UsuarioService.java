@@ -1,8 +1,8 @@
 package madstodolist.service;
 
-import madstodolist.dto.UsuarioData;
-import madstodolist.model.Usuario;
-import madstodolist.repository.UsuarioRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
+import madstodolist.dto.UsuarioData;
+import madstodolist.model.Usuario;
+import madstodolist.repository.UsuarioRepository;
+
+
 
 @Service
 public class UsuarioService {
@@ -71,5 +75,11 @@ public class UsuarioService {
         else {
             return modelMapper.map(usuario, UsuarioData.class);
         }
+    }
+
+    public List<Usuario> findAll() {
+        List<Usuario> usuarios = new java.util.ArrayList<>();
+        usuarioRepository.findAll().forEach(usuarios::add);
+        return usuarios;
     }
 }
